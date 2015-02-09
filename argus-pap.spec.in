@@ -7,7 +7,7 @@
 
 Name: argus-pap
 
-Version: 1.6.1
+Version: 1.6.2
 Release: 1%{?dist}
 Summary: Argus PAP service
 
@@ -128,6 +128,8 @@ fi
 %dir %{_localstatedir}/log/argus/pap
 
 %changelog
+* Mon Feb 2 2015 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.2-1
+- Bumped version to 1.6.2-1
 
 * Thu Apr 11 2013 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.1-1
 - Fix for https://savannah.cern.ch/bugs/?101151

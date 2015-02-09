@@ -4,6 +4,7 @@ tag=1_6
 # the Github repo 
 git=git://github.com/argus-authz/argus-pap.git
 
+
 # needed dirs
 source_dir=sources
 rpmbuild_dir=$(shell pwd)/rpmbuild
