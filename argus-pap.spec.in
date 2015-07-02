@@ -8,7 +8,7 @@
 Name: argus-pap
 
 Version: 1.6.2
-Release: 1%{?dist}
+Release: 2%{?dist}
 Summary: Argus PAP service
 
 Group: System Environment/Daemons
@@ -20,12 +20,11 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 BuildArch: noarch
 
 BuildRequires: maven
-BuildRequires: java-1.6.0-openjdk-devel
+BuildRequires: java-1.8.0-openjdk-devel
 
-Requires: java-1.6.0-openjdk
-Requires: voms-api-java3
+Requires: java-1.8.0-openjdk
 
-%description 
+%description
 
 Argus is a system meant to render consistent authorization decisions for
 distributed services (e.g. compute elements, portals). In order to achieve
@@ -128,6 +127,9 @@ fi
 %dir %{_localstatedir}/log/argus/pap
 
 %changelog
+* Thu Jul 2 2015 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.2-2
+- Move to java 8
+
 * Mon Feb 2 2015 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.2-1
 - Bumped version to 1.6.2-1
 
