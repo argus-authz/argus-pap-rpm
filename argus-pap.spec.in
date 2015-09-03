@@ -7,8 +7,8 @@
 
 Name: argus-pap
 
-Version: 1.6.2
-Release: 2%{?dist}
+Version: 1.6.3
+Release: 0%{?dist}
 Summary: Argus PAP service
 
 Group: System Environment/Daemons
@@ -127,7 +127,7 @@ fi
 %dir %{_localstatedir}/log/argus/pap
 
 %changelog
-* Thu Jul 2 2015 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.2-2
+* Thu Jul 2 2015 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.3-0
 - Move to java 8
 
 * Mon Feb 2 2015 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.2-1
