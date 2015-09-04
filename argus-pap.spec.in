@@ -23,6 +23,8 @@ BuildRequires: maven
 BuildRequires: java-1.8.0-openjdk-devel
 
 Requires: java-1.8.0-openjdk
+Requires: canl-java
+Requires: bouncycastle-pkix
 
 %description
 
