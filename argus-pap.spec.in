@@ -130,6 +130,8 @@ fi
 
 %if 0%{?rhel} >= 7 || 0%{?fedora} >= 21
 /lib/systemd/system/argus-pap.service
+%else
+%exclude /lib/systemd/system/argus-pap.service
 %endif
 
 %changelog
