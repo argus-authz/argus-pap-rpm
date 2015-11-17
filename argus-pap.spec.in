@@ -128,7 +128,7 @@ fi
 
 %dir %{_localstatedir}/log/argus/pap
 
-%if 0%{?rhl} >= 7 || 0%{?fedora} >= 21
+%if 0%{?rhel} >= 7 || 0%{?fedora} >= 21
 /lib/systemd/system/argus-pap.service
 %endif
 
