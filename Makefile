@@ -1,5 +1,5 @@
 name=argus-pap
-tag=1_6
+tag=fix/ISSUE-6
 
 # the Github repo 
 git=git://github.com/argus-authz/argus-pap.git
