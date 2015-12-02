@@ -128,7 +128,16 @@ fi
 
 %dir %{_localstatedir}/log/argus/pap
 
+%if 0%{?rhel} >= 7 || 0%{?fedora} >= 21
+/lib/systemd/system/argus-pap.service
+%else
+%exclude /lib/systemd/system/argus-pap.service
+%endif
+
 %changelog
+* Tue Nov 17 2015 Marco Caberletti <marco.caberletti at cnaf.infn.it> - 1.6.3-1
+- Support to Systemd
+
 * Thu Jul 2 2015 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.3-0
 - Move to java 8
 
@@ -138,7 +147,7 @@ fi
 * Thu Apr 11 2013 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.1-1
 - Fix for https://savannah.cern.ch/bugs/?101151
 
-* Wed Oct 16 2012 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.0-1
+* Tue Oct 16 2012 Andrea Ceccanti <andrea.ceccanti at cnaf.infn.it> - 1.6.0-1
 - CANL-based Argus PAP.
 - Decouple PAP pom version from rpm version.
 
